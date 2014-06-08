@@ -1,0 +1,17 @@
+{
+  "name": "grunt-primerospasos",
+  "version": "0.0.0",
+  "description": "mi first",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gruntf"
+  ],
+  "author": "Lalo landa",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
