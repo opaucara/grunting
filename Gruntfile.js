@@ -10,13 +10,13 @@ module.exports = function(grunt) {
         ]}
       }
     },
-    'string-replace': {
+    'replace': {
       dist: {
         options: {
           patterns: [
           {
-            match: 'src="js/appframework.min.js"',
-            replacement: 'src="js/baseppframework.min.js"'
+            match: /\js\/appframework.min.js/g,
+            replacement: [0,1,2]
           }
          ]
         },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('minapp', ['string-replace']);
+  grunt.registerTask('minapp', ['replace']);
   // Uglify Tasks
   //grunt.registerTask('customers', ['uglify:customers']);
   // LESS Tasks
